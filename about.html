@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnPoint Design</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/easy.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="Images/fave_icon.png" type="image/x-icon">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Start site wrapper -->
+    <div class="site-wrapper">
+        <div class="header-index">
+            <!-- ====== 1.1. Header section ====== -->
+            <header>
+                <nav class="container navbar">
+                    <div class="container-nav flex">
+                        <!-- Site logo -->
+                        <a class="navbar-logo" href="/"><img src="Images/logo.png" alt="logo"></a>
+            
+                        <!-- Hamburger menu button for mobile -->
+                        <button class="navbar-toggler" onclick="openNav()" type="button">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+            
+                        <!-- Nav links and LinkedIn icon together in the same flex container -->
+                        <ul class="navbar-nav flex">
+                            <li><a class="nav-link active" href="index.html#work">Work</a></li>
+                            <li><a class="nav-link" href="index.html#services">Services</a></li>
+                            <li><a class="nav-link" href="#about">About</a></li>
+                            <li><a class="nav-link" href="#faq">FAQ</a></li>
+                            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            
+                            <!-- LinkedIn icon -->
+                            <li class="hero-social-icon">
+                                <a href="https://www.linkedin.com/company/on-point-ppt/"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            
+                <!-- Sidebar for mobile -->
+                <aside id="mySidepanel" class="sidepanel">
+                    <div class="sidebar flex">
+                        <a href=""><img src="Images/white_logo.png" alt="logo"></a>
+                        <button class="closebtn btn_hover1" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div>
+                        <!-- Side menus -->
+                        <ul>
+                            <li><a class="nav-link active" href="index.html#work">Work</a></li>
+                            <li><a class="nav-link" href="index.html#services">Services</a></li>
+                            <li><a class="nav-link" href="#about">About</a></li>
+                            <li><a class="nav-link" href="#faq">FAQ</a></li>
+                            <li><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </header>
+            
+            <!-- ====== End of 1.1. Header section ====== -->
+            
+        </div>
+        
+
+        
+        
+
+         <!-- ====== 1.5. About us section ====== -->
+         <section class="about" id="about">
+            <div class="container">
+                <div class="about-title flex gap-1" data-aos="fade-down">
+                    <hr class="experience-hr1 m-0">
+                    <h5>ABOUT US</h5>
+                </div>
+                <div class="about-content flex">
+                    <div class="about-left">
+                        <h2 data-aos="fade-down" style="color: grey;">a bit </h2>
+                        <h2 data-aos="fade-down" style="color: rgb(0, 0, 0);"> about us</h2>
+                    </div>
+                    <div class="about-right" data-aos="fade-up">
+                        <p>At OnPoint Design, we help companies worldwide deliver their message by creating impactful presentation materials on PowerPoint, Prezi, Google Slides, and Keynote.
+                            We create custom-made presentations with unique visuals for any industry and any occasion: sales presentation, financial reports, event presentation, e-learning, pitch deck presentation... We also provide PowerPoint training, template creation, video editing, and research services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="circle"></div>
+        </section>
+        
+        <!-- ====== End of 1.5. About us section ====== -->
+        
+        
+        
+        <!-- ======  1.8. team section ====== -->
+        
+        <section class="core-team">
+            <div class="container">
+                <h2>Our core team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h3>Abdelghafour K.</h3>
+                        <p>Assistant Manager / Coordinator</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>Yassine Tair</h3>
+                        <p>Senior Graphic Specialist</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>Yousra Gaddar</h3>
+                        <p>Marketing Manager</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>Mehdi Nasr</h3>
+                        <p>Graphic Designer</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>Zineb Aitboujbir</h3>
+                        <p> Graphic Designer</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>Younes Sabraoui </h3>
+                        <p> Graphic Production Specialist
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ====== End of 1.8. team section ====== -->
+        
+        <!-- ====== 1.13. Blogs section ====== -->
+        <section class="blog">
+            <div class="container">
+                <div class="flex blog-center" data-aos="fade-down">
+                    <div class="w-66">
+                        <div class="flex gap-1">
+                            <hr class="blog-hr1">
+                            <h5>BLOGS</h5>
+                        </div>
+                        <h2 class="mt-1">Latest Posts</h2>
+                        <p class="mt-1 mb-15"> Ever wondered about the quirky side of the OnPoint Design team? 
+                            Here are some fun facts that make us more than just PowerPoint enthusiasts:
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="flex gap-2 mt-15 blog-cards">
+                    <div data-aos="fade-up" class="blog-card w-100">
+                        <img src="Images/home/blog1.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5>Born to Ride: Believe it or not, most of our designers are avid bikers!
+                                 The thrill of the open road fuels our creativity as much as our love for design.
+                            </h5>
+                            
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" class="blog-card w-100">
+                        <img src="Images/home/blog2.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5>Paw-some Coworker:  Meet the real MVP of our office - our dog!  Cooper is a daily source of inspiration, bringing joy and wagging tails to our workspace.
+                            </h5>
+                            
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="blog-card w-100">
+                        <img src="Images/home/blog3.png" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5>Tea Time Traditions:  Did you know? We never let an afternoon pass without indulging in making Moroccan mint tea. It's our little secret to keeping the creative vibes flowing!
+                            </h5>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.14. Blogs section ====== -->
+       
+
+        <!-- ====== 1.7. Services section ====== -->
+        <section class="service" id="services">
+            <div class="service-1">
+                <div class="container">
+                    <div class="service-data" data-aos="fade-down">
+                        <div class="w-66">
+                            <div class="flex gap-1">
+                                <hr class="service-hr1">
+                                <h5>SERVICES</h5>
+                            </div>
+                            <h2 class="mt-15">Services We Offer</h2>
+                            <p class="mt-15" style="color: #1a1a1a;">Our team of in-house designers is here to help you create presentations that instill confidence and inspire action, no matter your industry and no matter the occasion.
+                            </p>
+                        </div>
+                        
+                        <hr class="mt-15 mb-15">
+                    </div>  
+                     
+                   <div class="flex gap-1 mt-15 s-card">
+                        <div class="service-card" data-aos="fade-down">
+                            <figure><img src="Images/icon/slider1.png" alt="slider1"></figure>
+                            <h3>Template Creation </h3>
+                            <p >Corporate template presentation from scratch, aligned with your brand identity. 
+                            </p>
+                            </div>
+                        <div class="service-card" data-aos="fade-up">
+                            <figure><img src="Images/icon/slider2.png" alt="slider2"></figure>
+                            <h3> Slide Revamp</h3>
+                            <p>Visually appealing slides to wow your audience and communicate the right message.   
+                            </p>
+                           </div>
+                        <div class="service-card" data-aos="fade-down">
+                            <figure><img src="Images/icon/slider3.png" alt="slider3"></figure>
+                            <h3>Video Editing</h3>
+                            <p>Polished videos and animation for an impactful message. 
+                            </p>
+                          </div>
+                        <div class="service-card" data-aos="fade-up">
+                            <figure><img src="Images/icon/slider4.png" alt="slider4"></figure>
+                            <h3> PowerPoint Training </h3>
+                            <p>  Customized trainings with all the advanced skills you need to master Power Point
+                            </p>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== End of 1.7. Services section ====== -->
+
+
+        <!-- ====== 1.8. process section ====== -->
+        <section class="experience" >
+            <div class="container">
+                <div class="flex-wrap exp-center" data-aos="fade-up">
+                    <div class="w-66">
+                        <div class="flex gap-1">
+                            <hr class="experience-hr1 m-0">
+                            <h5>Process</h5>
+                        </div>
+                        <h2>How we work</h2>
+                       <br>
+                    </div>
+        
+                    <hr>
+                </div>
+                <div class="flex flex-sb">
+                    <div class="w-50 p-relative flex flex-center" data-aos="zoom-in">
+                        <div class="experience_mask">
+                            <figure><img src="Images/home/experience.png" alt="img"></figure>
+                        </div>
+                    </div>
+                    <div class="w-50 flex flex-col gap-2 mt-1">
+                        
+
+                        <div class="flex gap-1 ex-card" data-aos="fade-up">
+                            <div class="flex flex-center">
+                                <figure><img src="Images\icon\gatheringcontent.png" alt="slider1"></figure>
+                            </div>
+                            <div>
+                                <h4>Gathering Content</h4>
+                                <p>We receive your request and discuss your needs and design guidelines via email or phone to determine the best fit for your project.
+                                    
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="flex flex-center">
+                                <figure><img src="Images\icon\definingproposal.png" alt="slider1"></figure>
+                            </div>
+                            <div>
+                                <h4>Defining Proposal & Timeline</h4>
+                                <p>We draw our proposal and timeline that works best with your schedule and assign your project to our design specialists.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="flex flex-center">
+                                <figure><img src="Images\icon\reviewingsamples.png" alt="slider1"></figure>
+                            </div>
+                            <div>
+                                <h4>Reviewing Sample Slides</h4>
+                                <p>We provide you with sample slides for initial viewing and discuss adjustments if necessary.</p>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="500">
+                            <div class="flex flex-center">
+                                <figure><img src="Images\icon\qualitycheck.png" alt="slider1"></figure>
+                            </div>
+                            <div>
+                                <h4>Quality Check</h4>
+                                <p>Once our design specialists are done, our quality assurance team carries on with a detailed review of each slide.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="600">
+                            <div class="flex flex-center">
+                                <figure><img src="Images\icon\finaldeliverable.png" alt="slider1"></figure>
+                            </div>
+                            <div>
+                                <h4>Final Presentation Deliverable</h4>
+                                <p>Et voilà! Your presentation is ready and it is now time to wow your audience, this is when we wish you good luck!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+
+        <!-- ====== 1.12. FAQ section ====== -->
+        <section class="faq p-relative" id="faq">
+            <span> </span>
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-50 text-center" data-aos="fade-up">
+                        <div class="flex gap-2 ">
+                            <hr class="faq-hr1">
+                            <h5>FAQ</h5>
+                        </div>
+                        <h2 class="mt-1">Frequently Asked Questions</h2>
+                        
+                    </div>
+                    <div class="w-50 mt-15">
+                        <div class="accordion flex flex-col gap-2" id="accordionExample" data-aos="fade-down">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        1- So how much does it cost?
+                                        <img src="Images/icon/plus.png" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Good question. Don’t hang back in messaging us for a free proposal and a price. We’ll cost it to the specifics of your project. Include things like number of slides, intricacy of design and the extent of your content.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        2- Do you only use PowerPoint?
+                                        <img src="Images/icon/plus.png" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>To create your presentation, we may use any of the programmes from the Adobe suite, but in a nutshell, yes, we are PowerPoint people. Your final file will be fully adjustable PPT file
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        3- Is storytelling included?
+                                        <img src="Images/icon/plus.png" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>If you need help with the story and structure of your presentation, please let us know beforehand so we can include that in the cost estimate. We will discuss this in our first call when we clarify your needs.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        4- Do you offer any other services like web design?
+                                        <img src="Images/icon/plus.png" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>We are primarily a presentation design agency, but also partner with creatives that can help with other aspects of your projects or business. If you need anything from web design to branding, let us know and we’ll point you in the right direction with of one of our referral partners.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.12. FAQ section ====== -->
+
+          <!-- ====== 1.4. logoipsum section ====== -->
+          <section class="logoipsum" >
+            <div class="container">
+                <div class="flex flex-col gap-2">
+                    <hr class="hr1">
+                    <h3 data-aos="zoom-in" class="mb-15">Beyond Powerpoint</h3>
+                </div>
+                <div class="logoipsum-slider sliderlogo" data-aos="zoom-in">
+                    <figure><img src="Images/home/logoipsum1.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum2.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum3.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum4.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum5.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum6.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum7.svg" alt="logoipsum"></figure>
+                    <figure><img src="Images/home/logoipsum9.svg" alt="logoipsum"></figure>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.4. logoipsum section ====== -->
+
+
+        <!-- ======  1.4. mail section ====== -->
+        <div class="mail">
+            <div class="containerCntct">
+                <div class="footer-hr flex flex-col">
+                    <div class="flex gap-1" data-aos="fade-left">
+                        <hr>
+                        <h6>Newsletter</h6>
+                    </div>
+                    <h3>
+                        Like to discuss your own project? We are here to help.</h3>
+                    <p class="text-center">Let's get in touch to find the best solution to your presentation needs.
+                    </p>
+                </div>
+                <div class="center-btn flex">
+                    <a href="contact.html" class="btn_hover2" style="background: linear-gradient(180deg, #6648e8 0%, #0b23a7 100%); color: white;"><h4>Contact Us</h4></a>
+               </div>
+            </div>
+        </div>
+        <!-- ====== End of 1.4. mail section ====== -->
+
+
+        
+        <!-- ====== 1.15. Footer section ====== -->
+        <!-- ====== 1.15. Footer section ====== -->         
+<footer>
+    <div class="footer-container">
+        <div class="logo">
+            <img src="Images/logo.png" alt="OnPoint Design Logo">
+        </div>                         
+        <div class="address">
+            <h3>Address:</h3>
+            <p>49, Rue Saad Bnou Abi Wakkas, <br>ème étage, bureau n°6,<br> Casablanca, 20500<br> Maroc</p>
+        </div>                         
+        <div class="contact">
+            <h3>Contact Us:</h3>
+            <p><img src="Images/icon/email.svg" alt="Email Icon"> contact@opdesigners.com</p>
+            <p><img src="Images/icon/phone-call.svg" alt="Phone Icon"> +212 5 22 44 12 69</p>
+        </div>                         
+        <div class="social">
+            <h3>Follow Us:</h3>
+            <div style="font-size: 1.5rem"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+        </div>                         
+        
+    </div>
+</footer>                   
+<!--end of footer section-->  
+
+        
+
+        <!--end of footer section-->
+
+
+
+
+
+
+
+    </div>
+
+    <!-- end site wrapper -->
+
+
+    <!-- button back to top -->
+    <button onclick="scrollToTop()" id="backToTopBtn" class="btn_hover2"><i
+            class="fa-solid fa-arrow-turn-up"></i></button>
+
+  
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1250,
+            once: true,
+        });
+    </script>
+
+    <!-- jquery js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery min js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick carousel min js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+
+
+    <script>
+        function updateTime() {
+          const now = new Date();
+          const timeElement = document.getElementById("local-time");
+          const hours = now.getHours().toString().padStart(2, '0');
+          const minutes = now.getMinutes().toString().padStart(2, '0');
+          const seconds = now.getSeconds().toString().padStart(2, '0');
+          timeElement.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+      
+        setInterval(updateTime, 1000);
+      </script>
+      
+      
+
+    
+
+</body>
+
+</html>

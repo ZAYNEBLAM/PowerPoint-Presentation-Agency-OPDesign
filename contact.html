@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/easy.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="Images/fave_icon.png" type="image/x-icon">
+     <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        /* Default styles (Desktop and larger screens) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.map-form {
+    font-family: "MuseoModerno", sans-serif;
+    padding: 80px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.left-side, .right-side {
+    width: 45%;
+}
+
+.left-side h2, .right-side h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.left-side h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.left-side p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.left-side a {
+    color: #6648e8;
+    text-decoration: none;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+textarea {
+    resize: none;
+}
+
+.send-btn {
+    padding: 12px 30px;
+    background-color: #0b23a7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+    background-color: #6648e8;
+}
+
+.map-section {
+    margin-top: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile-specific styles (screens 768px and smaller) */
+@media (max-width: 768px) {
+    .map-form {
+        padding: 40px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    .left-side h2, .right-side h2 {
+        font-size: 24px;
+    }
+
+    .form-group {
+        gap: 15px;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 14px;
+    }
+
+    .send-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .map-section iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+    </style>>
+</head>
+
+
+
+<body>
+
+
+    <!-- ====== 1.1. Header section ====== -->
+<header>
+    <nav class="container navbar">
+        <div class="container-nav flex">
+            <!-- Site logo -->
+            <a class="navbar-logo" href="/"><img src="Images/logo.png" alt="logo"></a>
+
+            <!-- Hamburger menu button for mobile -->
+            <button class="navbar-toggler" onclick="openNav()" type="button">
+                <span class="fa-solid fa-bars"></span>
+            </button>
+
+            <!-- Nav links and LinkedIn icon together in the same flex container -->
+            <ul class="navbar-nav flex">
+                <li><a class="nav-link active" href="index.html#work">Work</a></li>
+                <li><a class="nav-link" href="index.html#services">Services</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="index.html#faq">FAQ</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+
+                <!-- LinkedIn icon -->
+                <li class="hero-social-icon">
+                    <a href="https://www.linkedin.com/company/on-point-ppt/"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sidebar for mobile -->
+    <aside id="mySidepanel" class="sidepanel">
+        <div class="sidebar flex">
+            <a href=""><img src="Images/white_logo.png" alt="logo"></a>
+            <button class="closebtn btn_hover1" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div>
+        <div>
+            <!-- Side menus -->
+            <ul>
+                <li><a class="nav-link active" href="index.html#work">Work</a></li>
+                <li><a class="nav-link" href="index.html#services">Services</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="index.html#faq">FAQ</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </aside>
+</header>
+
+<!-- ====== End of 1.1. Header section ====== -->
+
+<div class="contact_page">
+    <div class="map-form">
+    
+        <div class="contact-section">
+            <div class="left-side">
+                <h2>Get in touch</h2>
+                <p> Ready to take your presentation to the next level? We would love to hear about your project.
+                     Either fill out the form on the right or
+                     email us at <a href="contact@opdesigners.com">contact@opdesigners.com</a>; our team will reach out within 24 hours.</p>
+        
+                   </div>
+        
+            <div class="right-side">
+            
+        
+        
+                <form id="contactForm" action="" method="post" onsubmit="return handleSubmit(event);">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="text" name="c-name" placeholder="Company name" required>
+                        <input list="services-list" name="services" id="services" placeholder="I would like to know more about" required>
+                        <datalist id="services-list">
+                            <option value="Template creation">
+                            <option value="Slide Revamp">
+                            <option value="PowerPoint Training">
+                            <option value="Video Editing">
+                            <option value="Costs">
+                        </datalist>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Message" rows="6" required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="send-btn">Submit</button>
+                    </div>
+                </form>
+                <div id="successMessage" style="display: none; color: green; margin-top: 10px;">
+                    Your message has been sent successfully!
+                </div>
+                
+        </div>
+        </div>
+        
+        <!-- Map Section -->
+        <h2>Meet us</h2>
+        <div class="map-section">
+            
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.1627612653774!2d-7.6200626!3d33.5841509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d37c03f0478d%3A0x47302f39cf54d1ba!2sOnPoint%20Design!5e0!3m2!1sfr!2sma!4v1697361169192!5m2!1sfr!2sma" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          </div>
+        
+        </div>
+</div>
+
+
+ <!-- ====== 1.15. Footer section ====== -->
+ <footer>
+    <div class="footer-container">
+        <div class="logo">
+            <img src="Images\logo.png" alt="OnPoint Design Logo">
+        </div>
+
+        <div class="address">
+            <h3>Address:</h3>
+            <p>49, Rue Saad Bnou Abi Wakkas,<br> 3ème étage, bureau n°6,<br> Casablanca, 20500<br> Maroc</p>
+        </div>
+
+        <div class="contact">
+            <h3>Contact Us:</h3>
+            <p><img src="Images\icon\email.svg" alt="Email Icon" > contact@opdesigners.com</p>
+            <p><img src="Images\icon\phone-call.svg" alt="Phone Icon"> +212 5 22 44 12 69</p>
+        </div>
+
+        <div class="social">
+            <h3>Follow Us:</h3>
+            <div style="font-size: 1.5rem"><a href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+        </div>
+
+        
+    </div>
+</footer>
+
+
+
+<!--end of footer section-->
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event){
+        event.preventDefault(); // Prevent the form from submitting
+
+        // Show the success message
+        document.getElementById("successMessage").style.display = "block";
+    });
+</script>
+
+
+
+
+    <script src="js/script.js"></script>
+    <!-- animation -->
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1100,
+        });
+    </script>
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1250,
+            once: true,
+        });
+    </script>
+
+    <!-- jquery js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery min js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick carousel min js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
